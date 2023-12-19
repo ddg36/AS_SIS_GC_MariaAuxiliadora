@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
   <!-- plantillas -->
   <!-- Favicons -->
-  <link href="assets\img\gallery\gallery-1.jpg" rel="icon">
-  <link href="assets\img\gallery\gallery-1.jpg" rel="apple-touch-icon">
+  <link href="..\assets\img\gallery\gallery-1.jpg" rel="icon">
+  <link href="..\assets\img\gallery\gallery-1.jpg" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="..\assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="..\assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="..\assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -65,11 +65,11 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="acerca.html">Acerca</a></li>
-          <li><a class="nav-link scrollto" href="contacto.html">Contacto</a></li>
-          <li><a class="nav-link scrollto" href="doctores.html">Doctores</a></li>
-          <li><a class="nav-link scrollto" href="servicios.html">Servicios</a></li>
+          <li><a class="nav-link scrollto active" href="..\index.html">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="..\acerca.html">Acerca</a></li>
+          <li><a class="nav-link scrollto" href="..\contacto.html">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="..\doctores.html">Doctores</a></li>
+          <li><a class="nav-link scrollto" href="..\servicios.html">Servicios</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -84,59 +84,42 @@
     <div class="container">
       <h1>Bienvenido al Centro Medico Maria Auxiliadora</h1>
       <h2>Somos una institución de atención médica que se encuentra ubicada en la pintoresca localidad de Pampas Tayacaja</h2>
-      <a href="" class="btn-get-started scrollto">iniciar sesion</a>
-      <a href="vista/vista_RegistroUsuario.html" class="btn-get-started scrollto">registrarse</a>
+
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
-              <h3>¿Por qué elegir el centro medico Maria auxiliadora?</h3>
-              <p>En el Centro Médico "María Auxiliadora", nos enorgullece brindar atención médica integral y de calidad a nuestros pacientes.</p>
-              <div class="text-center">
-                <a href="#about" class="more-btn">mas detalles <i class="bx bx-chevron-right"></i></a>
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Registro de Usuarios</h2>
+          </div>
+  
+          <form action="../controlador/controlador_RegistrarUsuario.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input type="text" name="username" class="form-control" id="username-input" placeholder="Nombre de Usuario:" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 caracteres" required>
+                <div class="validate"></div>
+              </div>
+            
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email-input" placeholder="Correo Electrónico:" data-rule="email" data-msg="Por favor coloque un Correo Electrónico correcto" required>
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="password" class="form-control" name="password" id="password-input" placeholder="Contraseña:" data-rule="minlen:4" data-msg="por favor coloque su contraseña con mas de 4 digitos">
+                <div class="validate"></div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Somos una opción confiable para tu salud</h4>
-                    <p class="details">Con una sólida experiencia de más de 5 años en funcionamiento</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Nosotros Ofrecemos </h4>
-                    <p class="details">Atención las 24 horas del día, los 7 días de la semana.</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-                    <h4>La salud no conoce horarios</h4>
-                    <p class="details"> Estamos disponibles para atender cualquier emergencia o necesidad médica que pueda surgir</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
+
+            <div class="text-center"><button type="submit">Registrarse</button></div>
+          </form>
+  
         </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
+      </section><!-- End Appointment Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -223,14 +206,13 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="..\assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="..\assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="..\assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="..\assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="..\assets/js/main.js"></script>
 
 </body>
 
